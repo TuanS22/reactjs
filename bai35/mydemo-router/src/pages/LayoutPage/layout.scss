@@ -1,0 +1,68 @@
+.layout {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(161, 161, 161);
+    font-family: monospace;
+    font-size: 20px;
+    position: relative;
+
+    &__logo {
+        font-size: 22px;
+    }
+
+    &__menu {
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+                text-transform: uppercase;
+                padding: 5px 10px;
+
+                a {
+                    text-decoration: none;
+                    margin: 20px;
+                    color: white;
+                    font-weight: bold;
+                }
+
+                .active {
+                    color: blue;
+                    font-family: monospace;
+                }
+            }
+        }
+
+        ul li:hover .sub__menu {
+            display: block !important;
+        }
+    }
+
+    &__main {
+        width: 80%;
+        padding: 20px;
+        margin: auto;
+    }
+
+    &__footer {
+        background-color: rgb(161, 161, 161);
+        padding: 20px;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+.sub__menu {
+    position: absolute;
+    top: 75px;
+    background-color: gray;
+    padding-left: 0;
+    display: none !important;
+    
+    li a {
+        white-space: nowrap;
+    }
+}

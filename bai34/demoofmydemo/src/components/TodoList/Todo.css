@@ -1,0 +1,8 @@
+.todo--content {
+    font-size: 22px;
+    font-family: monospace;
+}
+
+.todo--complete {
+    color: brown;
+}

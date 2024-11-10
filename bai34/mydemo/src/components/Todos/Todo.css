@@ -1,0 +1,9 @@
+.todo--content {
+    font-size: 22px;
+    font-family: monospace;
+}
+
+.todo--completed {
+    font-weight: bold;
+    color: green;
+}

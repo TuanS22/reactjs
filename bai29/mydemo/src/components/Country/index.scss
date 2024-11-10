@@ -1,0 +1,36 @@
+.country {
+    width: 200px;
+    border: 1px solid orange;
+    color: black;
+    margin: 50px;
+
+    & ul {
+        padding: 0;
+        margin: 0;
+
+        & li {
+            list-style: none;
+            background-color: orange;
+
+            & ul {
+                background-color: white;
+
+                & li {
+                    background-color: white;
+                    border: 1px solid orange;
+                    padding: 10px;
+
+                    & span {
+                        padding: 20px 10px;
+                    }
+                }
+            }
+        }
+    }
+    
+    &--name {
+        padding-left: 10px;
+        color: red;
+        font-weight: bold;
+    }
+}

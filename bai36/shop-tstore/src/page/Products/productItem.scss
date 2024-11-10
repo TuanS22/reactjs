@@ -1,0 +1,52 @@
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+  
+    &__item {
+      width: calc((25% - 25px)); 
+      transition: .3s;
+      position: relative; // Cho nút btnCart
+  
+      &:hover {
+        transform: scale(1.04); // Phóng to nhẹ khi hover
+  
+        .product__item--btnCart {
+          opacity: 1;
+          visibility: visible;
+          top: 0;
+          right: 0;
+          padding: 10px;
+        }
+      }
+  
+      &--img img {
+        width: 100%;
+        height: 300px;
+      }
+  
+      &--description {
+        h4, p {
+          display: -webkit-box;
+          -webkit-line-clamp: 2; // giới hạn số dòng là 2
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          height: 44px; // Đảm bảo chiều cao cố định cho tiêu đề
+        }
+  
+        h5 {
+          text-align: center;
+        }
+      }
+  
+      &--btnCart {
+        opacity: 0; // Ẩn nút lúc đầu
+        visibility: hidden;
+        position: absolute; // Đặt nút tuyệt đối nếu cần
+        transition: opacity .3s ease; // Thêm hiệu ứng mượt mà
+      }
+    }
+  }
+  

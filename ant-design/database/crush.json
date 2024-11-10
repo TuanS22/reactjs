@@ -1,0 +1,173 @@
+{
+  "crush": [
+    {
+      "id": "8357",
+      "number": "02 lần",
+      "time": "02 giờ",
+      "name": "Le Anh Tuan",
+      "age": "22",
+      "email": "22tuanle@gmail.com",
+      "phone": "0398996397",
+      "services": [
+        "thue-nguoi-yeu"
+      ],
+      "radio": "nuoc-hoa-nam",
+      "date": "18/10/2024 05:00:00"
+    },
+    {
+      "id": "206e",
+      "number": "05 lần",
+      "time": "06 giờ",
+      "name": "Le Anh Tuan",
+      "age": "22",
+      "email": "22tuanle@gmail.com",
+      "phone": "0398996397",
+      "services": [
+        "thue-nguoi-yeu",
+        "thue-nha"
+      ],
+      "radio": "nuoc-hoa-nam",
+      "date": "13/10/2024 19:00:00"
+    },
+    {
+      "id": "96dc",
+      "number": "08 lần",
+      "time": "20 giờ",
+      "name": "Le Anh Tuan",
+      "email": "22tuanle@gmail.com",
+      "phone": "0398996397",
+      "services": [
+        "thue-nguoi-yeu",
+        "thue-nha"
+      ],
+      "radio": "mu-bao-hiem",
+      "age": "22",
+      "date": "20/10/2024 22:00:00"
+    },
+    {
+      "id": "532c",
+      "number": "02 lần",
+      "time": "19 giờ",
+      "name": "Le Anh Tuan",
+      "age": "22",
+      "email": "22tuanle@gmail.com",
+      "phone": "0398996397",
+      "services": [
+        "thue-nguoi-yeu"
+      ],
+      "radio": "nuoc-hoa-nam",
+      "date": "14/10/2024 08:05:00"
+    },
+    {
+      "id": "8696",
+      "number": "07 lần",
+      "time": "06 giờ",
+      "name": "Le Quốc Hưng",
+      "age": "12",
+      "phone": "0398996111",
+      "email": "22tuanle@gmail.xyz",
+      "services": [
+        "thue-nha"
+      ],
+      "radio": "quan-dai",
+      "date": "23/10/2024 06:00:07"
+    },
+    {
+      "id": "538c",
+      "number": "08 lần",
+      "time": "08 giờ",
+      "name": "Le Quốc Hưng",
+      "age": "12",
+      "email": "22tuanle@gmail.xyz",
+      "phone": "0398996111",
+      "services": [
+        "thue-nha"
+      ],
+      "radio": "mu-bao-hiem",
+      "date": "06/11/2025 08:16:00"
+    }
+  ],
+  "create-crush": [
+    {
+      "id": "81df",
+      "username": "Le Anh Tuan",
+      "password": "1111",
+      "status": true,
+      "optionVip": [
+        "1",
+        "2"
+      ],
+      "signup": "30/11/2024 15:00:00"
+    },
+    {
+      "id": "5bf3",
+      "username": "Le Anh Tuan",
+      "password": "123",
+      "status": false,
+      "optionVip": [
+        "2"
+      ],
+      "signup": "09/11/2024 08:00:00"
+    },
+    {
+      "id": "53f3",
+      "username": "Le Anh Tuan",
+      "password": "123",
+      "status": false,
+      "optionVip": [
+        "2"
+      ],
+      "signup": "09/11/2024 08:00:00"
+    },
+    {
+      "id": "53222",
+      "username": "Le Anh Tuan",
+      "password": "123",
+      "status": false,
+      "optionVip": [
+        "2"
+      ],
+      "signup": "09/11/2024 08:00:00"
+    },
+    {
+      "id": "53f12",
+      "username": "Le Anh Tuan",
+      "password": "123",
+      "status": false,
+      "optionVip": [
+        "2"
+      ],
+      "signup": "09/11/2024 08:00:00"
+    }
+  ],
+  "basic-line": [
+    {
+      "data": "01-2024",
+      "quantity": "1211"
+    },
+    {
+      "data": "02-2024",
+      "quantity": "1261"
+    },
+    {
+      "data": "03-2024",
+      "quantity": "1611"
+    },
+    {
+      "data": "04-2024",
+      "quantity": "1911"
+    },
+    {
+      "data": "05-2024",
+      "quantity": "2111"
+    },
+    {
+      "data": "06-2024",
+      "quantity": "2211"
+    },
+    {
+      "data": "07-2024",
+      "quantity": "3211"
+    }
+  ]
+}

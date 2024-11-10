@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "json-server -p 3002 --watch dataProduct.json"
+  },
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}

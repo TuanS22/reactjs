@@ -1,0 +1,37 @@
+.comment--list {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.comment--item {
+    width: calc(100% / 4);
+    margin: 25px 0;
+}
+
+.comment--img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/2;
+}
+
+.comment--body {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    cursor: pointer;
+    font-size: 20px;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid red;
+    margin: 10px;
+    border-radius: 20%;
+}

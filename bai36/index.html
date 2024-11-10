@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Footer</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .image-content:last-child {
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab-flex" style="display: flex; justify-content: space-between;">
+        <div class="image-content" style="position: relative; width: 32%;">
+            <img src="https://dalatmarketing.com.vn/wp-content/uploads/2024/10/image-4.png"
+                style="object-fit: cover; width: 100%; height: 100%; border-radius: 12px;" alt="">
+            <div class="overlay"
+                style="position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; border-radius: 12px; background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.9) 100%); z-index: 1;">
+            </div>
+            <p
+                style="position: absolute; color: #FAFAFA; top: 90%; left: 50%; transform: translateX(-50%); margin-bottom: 0; font-size: 20px; font-family: Montserrat, sans-serif; font-weight: 900; text-transform: uppercase; line-height: 30px; text-align: center; z-index: 2;">
+                Nông nghiệp</p>
+        </div>
+        <div class="image-content" style="position: relative; width: 32%;">
+            <img src="https://dalatmarketing.com.vn/wp-content/uploads/2024/10/image-5.png"
+                style="object-fit: cover; width: 100%; height: 100%; border-radius: 12px;" alt="">
+            <div class="overlay"
+                style="position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; border-radius: 12px; background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.9) 100%); z-index: 1;">
+            </div>
+            <p
+                style="position: absolute; color: #FAFAFA; top: 90%; left: 50%; transform: translateX(-50%); margin-bottom: 0; font-size: 20px; font-family: Montserrat, sans-serif; font-weight: 900; text-transform: uppercase; line-height: 30px; text-align: center; z-index: 2;">
+                Thực phẩm</p>
+        </div>
+        <div class="image-content" style="position: relative; width: 32%;">
+            <img src="https://dalatmarketing.com.vn/wp-content/uploads/2024/10/image-6.png"
+                style="object-fit: cover; width: 100%; height: 100%; border-radius: 12px;" alt="">
+            <div class="overlay"
+                style="position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; border-radius: 12px; background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.9) 100%); z-index: 1;">
+            </div>
+            <p
+                style="position: absolute; color: #FAFAFA; top: 90%; left: 50%; transform: translateX(-50%); margin-bottom: 0; font-size: 20px; font-family: Montserrat, sans-serif; font-weight: 900; text-transform: uppercase; line-height: 30px; text-align: center; z-index: 2;">
+                Du lịch</p>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const slider = document.querySelector('.container-scroll-xdkd');
+            const nextBtn = document.querySelector('.next-btn-xd'); // Nút next
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            // Sự kiện khi giữ chuột
+            slider.addEventListener('mousedown', (e) => {
+                isDown = true;
+                slider.classList.add('active');
+                startX = e.pageX - slider.offsetLeft;
+                scrollLeft = slider.scrollLeft;
+                slider.style.cursor = "grabbing"; // Thay đổi con trỏ chuột khi kéo
+            });
+
+            slider.addEventListener('mouseleave', () => {
+                isDown = false;
+                slider.classList.remove('active'); // Xóa class active khi chuột rời đi
+                slider.style.cursor = "grab"; // Đổi lại con trỏ chuột
+            });
+
+            slider.addEventListener('mouseup', () => {
+                isDown = false;
+                slider.classList.remove('active'); // Xóa class active khi nhả chuột
+                slider.style.cursor = "grab";
+            });
+
+            slider.addEventListener('mousemove', (e) => {
+                if (!isDown) return; // Chỉ thực hiện nếu chuột đang giữ
+                e.preventDefault();
+                const x = e.pageX - slider.offsetLeft;
+                const walk = (x - startX) * 1.5; // Điều chỉnh độ nhạy cuộn
+                slider.scrollLeft = scrollLeft - walk;
+            });
+
+            // Sự kiện click cho nút next
+            nextBtn.addEventListener('click', () => {
+                const scrollAmount = 300; // Độ dài cuộn khi nhấn nút next, bạn có thể thay đổi giá trị này
+                slider.scrollLeft += scrollAmount; // Cuộn sang phải khi nhấn nút next
+            });
+            document.querySelectorAll('.card-item-xdpkd').forEach(item => {
+                // Lắng nghe sự kiện hover (mouseover)
+                item.addEventListener('mouseover', function () {
+                    // Loại bỏ class 'active' khỏi tất cả các mục
+                    document.querySelectorAll('.card-item-xdpkd').forEach(el => el.classList.remove('active'));
+
+                    // Thêm class 'active' vào mục được hover
+                    this.classList.add('active');
+                });
+            });
+        })();
+
+
+    </script>
+</body>
+
+</html>

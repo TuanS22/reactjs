@@ -1,0 +1,19 @@
+.cart {
+    &__item {
+        display: -webkit-box;
+        transition: 0.3s;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+
+        &--img {
+            border-radius: 8px;
+        }
+
+        &--description {
+            margin-left: 20px;
+            width: 70%;
+        }
+    }
+}

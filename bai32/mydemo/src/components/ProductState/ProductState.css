@@ -1,0 +1,36 @@
+.product--list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%;
+    gap: 20px;
+}
+
+.product--item {
+    border-bottom: 1px solid gray;
+    width: calc(25% - 20px);
+    margin-top: 50px;
+}
+
+.product--item h3,
+.product--item h5,
+.product--item p {
+    margin: 10px 0;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.product--item p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+.product--img {
+    border: 1px solid red;
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}

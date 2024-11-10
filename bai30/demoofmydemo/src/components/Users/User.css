@@ -1,0 +1,42 @@
+.user--list {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.user--item {
+    width: calc(100% / 4);
+    margin: 25px 0;
+}
+
+.user--img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/2;
+}
+
+.user--name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user--age {
+    color: blue;
+    font-weight: 500;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    cursor: pointer;
+    font-size: 20px;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid red;
+    margin: 10px;
+    border-radius: 20%;
+}

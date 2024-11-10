@@ -1,0 +1,57 @@
+.header {
+    display: flex;
+    color: #fff;
+    padding: 0;
+    height: 64px;
+    line-height: 64px;
+    background-color: #fff;
+
+    &__left {
+        width: 20%;
+        border-right: 1px solid rgb(199, 199, 199);
+        transition: all 0.2s;
+    }
+
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+
+        &--search {
+            display: flex;
+
+            div Button {
+                margin-left: 10px;
+            }
+        }
+
+        &--bell {
+            display: flex;
+            color: gray;
+
+            div {
+                padding: 0 10px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__icon--search {
+        font-size: 18px;
+        color: gray;
+        padding-left: 20px;
+    }
+}
+
+.sider {
+    text-align: center;
+    line-height: '120px';
+    color: #000;
+    background-color: #fff;
+}
+
+.collapsed {
+    width: 80px;
+    border-right: 1px solid rgb(199, 199, 199);
+    transition: all 0.2s;
+}

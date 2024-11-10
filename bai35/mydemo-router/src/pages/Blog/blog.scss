@@ -1,0 +1,17 @@
+.product__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0;
+    gap: 20px;
+    width: 100%;
+    
+    &--item {
+        width: calc(20% - 20px);
+        background: ghostwhite;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
